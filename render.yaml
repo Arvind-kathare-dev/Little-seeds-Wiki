@@ -5,6 +5,7 @@ services:
     plan: free
     buildCommand: npm install --production --legacy-peer-deps
     startCommand: node server
+    port: 3000
     envVars:
       - key: DB_TYPE
         value: postgres
@@ -12,8 +13,6 @@ services:
         fromDatabase:
           name: wikijs-db
           property: connectionString
-      - key: WIKI_PORT
-        value: 3000
 
 databases:
   - name: wikijs-db
