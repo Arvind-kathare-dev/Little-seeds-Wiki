@@ -20,16 +20,18 @@ services:
       - key: DB_SSL
         value: "true"
       
-      # Email Settings (Gmail SMTP)
-      - key: MAIL_TYPE
+      # Correct Wiki.js Mail Environment Variables
+      - key: WIKI_MAIL_TYPE
         value: smtp
-      - key: MAIL_CONFIG_HOST
+      - key: WIKI_MAIL_HOST
         value: smtp.gmail.com
-      - key: MAIL_CONFIG_PORT
+      - key: WIKI_MAIL_PORT
         value: "587"
-      - key: MAIL_CONFIG_USER
+      - key: WIKI_MAIL_USER
         value: arvind.kathare.dev@gmail.com
-      - key: MAIL_CONFIG_PASS
+      - key: WIKI_MAIL_PASS
         value: ssrponnechnslbus
-      - key: MAIL_SENDER
+      - key: WIKI_MAIL_SENDER
         value: arvind.kathare.dev@gmail.com
+      - key: WIKI_MAIL_USE_TLS
+        value: "true"
