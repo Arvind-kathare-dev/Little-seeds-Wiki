@@ -1,8 +1,6 @@
 {
   "version": 2,
-  "installCommand": "npm install --production --legacy-peer-deps",
-  "buildCommand": "echo 'Build skipped (using pre-built binary)'",
-  "devCommand": "node server",
-  "framework": null,
-  "regions": ["iad1"]
+  "installCommand": "npm install --production --legacy-peer-deps --no-audit --no-fund --loglevel error",
+  "buildCommand": "mkdir -p public && echo 'Wiki.js Binary Deployment Successful. Note: This app requires a persistent server to run the wiki engine.' > public/index.html",
+  "outputDirectory": "public"
 }

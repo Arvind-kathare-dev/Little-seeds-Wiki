@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: wikijs-app
+    runtime: node
+    plan: free
+    buildCommand: npm install --production --legacy-peer-deps
+    startCommand: node server
+    envVars:
+      - key: DB_TYPE
+        value: postgres
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wikijs-db
+          property: connectionString
+      - key: WIKI_PORT
+        value: 3000
+
+databases:
+  - name: wikijs-db
+    plan: free
+    databaseName: wikijs
+    user: wikijs_user
