@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "installCommand": "npm install --production --legacy-peer-deps",
+  "buildCommand": "echo 'Build skipped (using pre-built binary)'",
+  "devCommand": "node server",
+  "framework": null,
+  "regions": ["iad1"]
+}

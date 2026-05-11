@@ -7,12 +7,8 @@
   "dev": false,
   "scripts": {
     "start": "node server",
-    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider node dev",
-    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --profile --config dev/webpack/webpack.prod.js",
-    "watch": "cross-env NODE_OPTIONS=--openssl-legacy-provider webpack --config dev/webpack/webpack.dev.js",
-    "test": "eslint --format codeframe --ext .js,.vue . && pug-lint server/views && jest",
-    "cypress:open": "cypress open",
-    "postinstall": "patch-package"
+    "dev": "node server",
+    "build": "echo 'Pre-built binary'"
   },
   "repository": {
     "type": "git",
@@ -34,7 +30,7 @@
   },
   "homepage": "https://github.com/Requarks/wiki#readme",
   "engines": {
-    "node": ">=20"
+    "node": "20.x"
   },
   "dependencies": {
     "@azure/storage-blob": "12.29.1",
