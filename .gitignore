@@ -5,7 +5,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Wiki.js
-config.yml
 data/
 logs/
 .env

@@ -1,0 +1,16 @@
+port: 3000
+
+db:
+  type: postgres
+  host: ep-fragrant-bird-apsm2o2y.c-7.us-east-1.aws.neon.tech
+  port: 5432
+  user: neondb_owner
+  pass: npg_z0d9ClEvZaRx
+  db: neondb
+  ssl: true
+
+bindIP: 0.0.0.0
+logLevel: info
+offline: false
+ha: false
+dataPath: ./data
