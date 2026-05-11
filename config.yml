@@ -8,8 +8,9 @@ db:
   pass: npg_z0d9ClEvZaRx
   db: neondb
   ssl: true
-  # Advanced SSL settings for cloud providers like Neon
-  sslConfig:
+  # Ye settings Wiki.js ke core logic ke liye zaroori hain
+  sslOptions:
+    auto: false
     rejectUnauthorized: false
 
 bindIP: 0.0.0.0
