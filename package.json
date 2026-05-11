@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/Requarks/wiki#readme",
   "engines": {
-    "node": "20.x"
+    "node": "18.x"
   },
   "overrides": {
     "extract-files": "9.0.0"
