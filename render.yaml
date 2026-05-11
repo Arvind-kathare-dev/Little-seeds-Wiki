@@ -3,7 +3,6 @@ services:
     name: wikijs-app
     runtime: docker
     plan: free
-    port: 3000
     envVars:
       - key: DB_TYPE
         value: postgres
