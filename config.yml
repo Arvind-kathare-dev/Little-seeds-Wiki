@@ -8,6 +8,9 @@ db:
   pass: npg_z0d9ClEvZaRx
   db: neondb
   ssl: true
+  # Advanced SSL settings for cloud providers like Neon
+  sslConfig:
+    rejectUnauthorized: false
 
 bindIP: 0.0.0.0
 logLevel: info
