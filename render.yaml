@@ -1,21 +1,21 @@
 services:
   - type: web
     name: wikijs-app
-    runtime: node
+    runtime: docker
     plan: free
-    buildCommand: npm install --production --legacy-peer-deps
-    startCommand: node server
     port: 3000
     envVars:
       - key: DB_TYPE
         value: postgres
-      - key: DATABASE_URL
-        fromDatabase:
-          name: wikijs-db
-          property: connectionString
-
-databases:
-  - name: wikijs-db
-    plan: free
-    databaseName: wikijs
-    user: wikijs_user
+      - key: DB_HOST
+        value: ep-fragrant-bird-apsm2o2y-pooler.c-7.us-east-1.aws.neon.tech
+      - key: DB_PORT
+        value: 5432
+      - key: DB_USER
+        value: neondb_owner
+      - key: DB_PASS
+        value: npg_z0d9ClEvZaRx
+      - key: DB_NAME
+        value: neondb
+      - key: DB_SSL
+        value: "true"
