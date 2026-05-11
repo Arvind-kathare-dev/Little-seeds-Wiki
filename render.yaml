@@ -4,6 +4,7 @@ services:
     runtime: docker
     plan: free
     envVars:
+      # Database Settings
       - key: DB_TYPE
         value: postgres
       - key: DB_HOST
@@ -18,3 +19,17 @@ services:
         value: neondb
       - key: DB_SSL
         value: "true"
+      
+      # Email Settings (Gmail SMTP)
+      - key: MAIL_TYPE
+        value: smtp
+      - key: MAIL_CONFIG_HOST
+        value: smtp.gmail.com
+      - key: MAIL_CONFIG_PORT
+        value: "587"
+      - key: MAIL_CONFIG_USER
+        value: arvind.kathare.dev@gmail.com
+      - key: MAIL_CONFIG_PASS
+        value: ssrponnechnslbus
+      - key: MAIL_SENDER
+        value: arvind.kathare.dev@gmail.com
