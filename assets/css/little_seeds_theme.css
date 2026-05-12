@@ -1,0 +1,175 @@
+/* =============================================
+   Little Seeds - Wiki.js Custom Theme
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --ls-sage: #B2C69B;
+  --ls-forest: #1A302F;
+  --ls-teal: #548D8D;
+  --ls-bg: #F8F9F5;
+  --ls-sidebar: #F0F2F5;
+  --ls-sidebar-border: #DDE1E7;
+}
+
+/* Global */
+body,
+.v-application {
+  font-family: 'Outfit', sans-serif !important;
+  background-color: var(--ls-bg) !important;
+  color: var(--ls-forest) !important;
+}
+
+/* Navbar - White */
+.v-app-bar,
+.v-app-bar.v-toolbar,
+.v-app-bar.v-toolbar.theme--dark,
+.v-app-bar.v-toolbar.theme--light {
+  background: #FFFFFF !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+  color: #424242 !important;
+}
+
+.v-toolbar__title {
+  font-weight: 700 !important;
+  color: #424242 !important;
+}
+
+.v-app-bar .v-btn,
+.v-app-bar .v-icon {
+  color: #616161 !important;
+}
+
+/* ===== SIDEBAR - Light Gray Full Height ===== */
+/* ===== SIDEBAR - LIGHT UI WITH WHITE TEXT ===== */
+
+aside.v-navigation-drawer,
+aside.v-navigation-drawer[style],
+aside.v-navigation-drawer.theme--dark,
+aside.v-navigation-drawer.theme--light,
+aside.v-navigation-drawer.primary,
+aside.v-navigation-drawer.blue,
+aside.v-navigation-drawer.grey,
+aside.v-navigation-drawer.grey.lighten-5 {
+
+  background-color: var(--ls-sidebar) !important;
+  background: linear-gradient(180deg,
+      #6F938A 0%,
+      #5E847B 100%) !important;
+
+  min-height: 100vh !important;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+aside.v-navigation-drawer .v-navigation-drawer__content {
+
+  background: transparent !important;
+
+  min-height: 100vh !important;
+}
+
+/* ===== SIDEBAR TEXT + ICONS ===== */
+
+.v-navigation-drawer .v-list-item,
+.v-navigation-drawer .v-list-item__title,
+.v-navigation-drawer .v-list-item__content,
+.v-navigation-drawer .v-list-item__subtitle,
+.v-navigation-drawer .v-icon,
+.v-navigation-drawer .v-list-group .v-list-item__title,
+.v-navigation-drawer .v-list-group .v-icon,
+.v-navigation-drawer .v-list-group__header .v-list-item__title {
+
+  color: rgba(255, 255, 255, 0.88) !important;
+
+  font-weight: 500 !important;
+
+  transition: all 0.22s ease;
+}
+
+/* ===== HOVER ===== */
+
+.v-navigation-drawer .v-list-item:hover,
+.v-navigation-drawer .v-list-group__header:hover,
+.v-navigation-drawer .v-list-group>.v-list-item:hover {
+
+  background: rgba(255, 255, 255, 0.12) !important;
+
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px !important;
+
+  transform: translateX(2px);
+}
+
+/* Hover Text */
+
+.v-navigation-drawer .v-list-item:hover .v-list-item__title,
+.v-navigation-drawer .v-list-item:hover .v-icon,
+.v-navigation-drawer .v-list-group__header:hover .v-list-item__title,
+.v-navigation-drawer .v-list-group__header:hover .v-icon,
+.v-navigation-drawer .v-list-group>.v-list-item:hover .v-list-item__title,
+.v-navigation-drawer .v-list-group>.v-list-item:hover .v-icon {
+
+  color: #FFFFFF !important;
+}
+
+/* ===== ACTIVE ITEM ===== */
+
+.v-navigation-drawer .v-list-item--active,
+.v-navigation-drawer .v-list-item--active .v-list-item__title {
+
+  /* color: #FFFFFF !important; */
+
+  font-weight: 700 !important;
+
+  /* background: rgba(255,255,255,0.18) !important; */
+
+  /* backdrop-filter: blur(12px); */
+
+  border-radius: 14px !important;
+
+  /* box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.08),
+    0 4px 12px rgba(0,0,0,0.08); */
+}
+
+/* Active Icon */
+
+.v-navigation-drawer .v-list-item--active .v-icon {
+
+  color: #FFFFFF !important;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Outfit', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--ls-forest) !important;
+}
+
+/* Buttons */
+.v-btn {
+  text-transform: none !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  transition: all 0.3s ease !important;
+}
+
+/* UI Cleanup */
+.dashboard-contribute {
+  display: none !important;
+}
+
+.v-btn.v-btn--fab.v-btn--fixed.v-btn--bottom {
+  display: none !important;
+}
